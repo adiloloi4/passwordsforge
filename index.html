@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1382470898557258"
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Password Generator – Create Strong, Secure Passwords | Passwords Forge</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: #121212;
+            color: #eee;
+            font-family: Arial, sans-serif;
+        }
+
+        .wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            flex: 1;
+            padding: 30px 20px;
+            max-width: 480px;
+            margin: auto;
+        }
+
+        .footer {
+            font-size: 12px;
+            color: #888;
+            text-align: center;
+            padding: 20px;
+            background-color: #121212;
+        }
+
+        .footer a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<!-- Cookie & GDPR Banner -->
+<div id="cookie-banner" style="
+    display: none;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: #222;
+    color: #fff;
+    padding: 18px 8px;
+    text-align: center;
+    z-index: 9999;
+    font-size: 14px;
+    box-shadow: 0 -2px 24px #0008;">
+    This site uses cookies and third-party services (such as Google AdSense) to show personalized ads and improve your experience.
+    By using this site, you agree to our
+    <a href='privacy.html' style='color: #ff6600;'>Privacy Policy</a>,
+    <a href='accessibility.html' style='color: #ff6600;'>Accessibility Statement</a>,
+    and
+    <a href='https://policies.google.com/technologies/ads' target='_blank' style='color: #ff6600;'>Google Ad Policy</a>.
+    <button onclick="document.getElementById('cookie-banner').style.display='none'; localStorage.setItem('cookiesAccepted', 'true');"
+            style="margin-left: 20px; background: #ff6600; color: #fff; border: none; border-radius: 6px; padding: 7px 16px; cursor: pointer;">
+        Accept
+    </button>
+    <button onclick="window.open('privacy.html','_blank');" style="margin-left: 6px; background: #333; color: #ff6600; border: 1px solid #ff6600; border-radius: 6px; padding: 7px 16px; cursor: pointer;">
+        Learn More
+    </button>
+</div>
+<script>
+    if (!localStorage.getItem('cookiesAccepted')) {
+        document.getElementById('cookie-banner').style.display = 'block';
+    }
+</script>
+<div class="wrapper">
+    <div class="container">
+        <img src="logologo.png"
+             alt="Passwords Forge logo with orange hammer"
+             style="display: block; margin: 0 auto 20px; max-width: 320px; height: auto;">
+        <label for="length">Password Length:</label>
+        <input type="number" id="length" min="4" max="64" value="12">
+
+        <label for="custom-word">Custom Word (optional):</label>
+        <input type="text" id="custom-word" placeholder="e.g. pizza123">
+
+        <div class="options">
+            <label><input type="checkbox" id="include-lower" checked> Include lowercase (a-z)</label><br>
+            <label><input type="checkbox" id="include-upper" checked> Include uppercase (A-Z)</label><br>
+            <label><input type="checkbox" id="include-numbers" checked> Include numbers (0-9)</label><br>
+            <label><input type="checkbox" id="include-symbols" checked> Include symbols (!@#)</label><br>
+        </div>
+
+        <img src="forgebuttoncropped.png" id="generate"
+             alt="Forge Password Button with metallic texture"
+             style="cursor: pointer; height: 120px; object-fit: contain; display: block; margin: 12px auto;">
+
+        <div class="output">
+            <input type="text" id="result" readonly style="width: 100%; padding: 10px; margin-bottom: 16px;">
+
+            <button id="copy"
+                    style="background: linear-gradient(145deg, #1c1c1c, #111);
+                     color: #ff6600;
+                     border: 1px solid #333;
+                     padding: 12px 24px;
+                     font-weight: bold;
+                     font-size: 16px;
+                     border-radius: 12px;
+                     box-shadow: 0 0 10px rgba(255, 102, 0, 0.4);
+                     text-shadow: 0 0 6px rgba(255, 102, 0, 0.8);
+                     cursor: pointer;
+                     transition: all 0.2s ease-in-out;
+                     display: block;
+                     margin: 10px auto;">
+                COPY
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>This tool is provided for educational and personal use only. Passwords generated here are not stored or transmitted. Use at your own risk.</p>
+        <p>We do not collect any data. All password generation is done locally in your browser.</p>
+        <p><a href="privacy.html">Privacy & Terms</a></p>
+        <p>
+            <a href="accessibility.html" style="color: #ff6600;">Accessibility Statement</a>
+        </p>
+        <p>This site complies with GDPR & CCPA. No personal data is stored or shared. You can read more in our <a href="privacy.html" style="color: #ff6600;">Privacy Policy</a>.</p>
+    </footer>
+</div>
+</body>
+</html>
